@@ -1,6 +1,6 @@
 # Simple OS
 
-This task will require you to have some knowledge of OOP and looping to complete.
+This task will require you to have some knowledge of OOP, looping, and array to complete.
 
 ## The `Application` Class
 
