@@ -14,7 +14,7 @@ A class called "Application" should contain:
 - `size`: private int 
 
 ### Constructor
-> The constructor should do these following task:
+The constructor should do these following task:
 - set `id` as `latestId`
 - increment `latestId` by 1
 - receive the `name`, `description`, and `size`, then assign them to the instance variables
@@ -37,7 +37,7 @@ A class called "OS" should contain:
 - `count` private int
 
 ### Constructor
-> The constructor should do these following task:
+The constructor should do these following task:
 - set `id` as `latestId`
 - increment `latestId` by 1
 - receive the `name`, and `storageSize`, the assign it to the instance variables
