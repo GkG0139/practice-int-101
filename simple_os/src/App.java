@@ -36,7 +36,6 @@ public class App {
   }
 
   private static void testAddAppToOS() {
-    System.out.println("==============");
     OS os1 = new OS("Andriod", 1500);
     Application app1 = new Application(
       "Apple Music",

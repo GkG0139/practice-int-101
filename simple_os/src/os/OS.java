@@ -15,12 +15,16 @@ public class OS {
   private int storageSize = 0;
   private int usedStorage = 0;
 
-  private int count = 1;
+  private int count;
 
   public OS(String name, int storageSize) {
     this.id = latestId++;
     this.name = name;
     this.storageSize = storageSize;
+
+    //Init
+    this.apps = new Application[1];
+    this.count = 0;
   }
 
   public int getId() {
@@ -46,29 +50,25 @@ public class OS {
   public boolean addApplication(Application newApplication) {
     if (usedStorage + newApplication.getSize() > storageSize) return false;
 
-    if (count == 0) {
-      apps = new Application[1];
-      apps[count++] = newApplication;
-    } else {
-      Application[] temp = new Application[count];
+    if (apps.length == count) {
+      Application[] temp = new Application[apps.length * 2];
 
       for (int i = 0; i < count; i++) {
-        if (i == count - 1) temp[i] = newApplication; else temp[i] = apps[i];
+        temp[i] = apps[i];
       }
       apps = temp;
-      count++;
     }
-    usedStorage = newApplication.getSize() + usedStorage;
+    apps[count++] = newApplication;
+    usedStorage += newApplication.getSize();
     return true;
   }
 
   public void removeApplication(int id) {
     if (count <= 0) return;
 
-    count--;
     int tempCount = 0;
-    Application[] temp = new Application[count - 1];
-    for (int i = 0; i < count; i++) {
+    Application[] temp = new Application[--count];
+    for (int i = 0; i <= count; i++) {
       if (apps[i].getId() == id) {
         usedStorage -= apps[i].getSize();
         continue;
