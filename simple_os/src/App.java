@@ -53,12 +53,13 @@ public class App {
 
     System.out.println("==============");
 
-    OS os2 = new OS("iOS", 1500);
+    OS os2 = new OS("iOS", 10000);
     Application app3 = new Application(
       "JOOX",
       "This app is popular in Thai",
       600
     );
+    os2.addApplication(app1);
     os2.addApplication(app2);
     os2.addApplication(app3);
     System.out.println(os2);
