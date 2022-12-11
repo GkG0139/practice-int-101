@@ -38,6 +38,7 @@ A class called "BookStore" should contain:
 - `latestId` the variable stores the latest id used by the book store object and declares it as private and static (type: int)
 - `name` the variable stores the book name and declare it as private (type: String)
 - `books` the variable stores the books that are available and declared as private (type: Book[])
+- `size` the variable stores the size of bookshelf in the shop and declared as private (type: int)
 
 ### Constructor
 
@@ -45,7 +46,7 @@ The constructor should do these following task:
 
 - set `id` as `latestId`
 - increment `latestId` by 1
-- receive the `name` and then assign it to the instance variable
+- receive the `name`, and `size`, then assign them to the instance variable
 
 #### Methods
 
