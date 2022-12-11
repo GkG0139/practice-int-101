@@ -9,7 +9,7 @@ A class called "Book" should contain:
 #### Instance variables
 
 - `id` the variable stores the book id and declare it as private (type: int)
-- `latestId` the variable stores the latest id used by the book object and declares it as public and static (type: int)
+- `latestId` the variable stores the latest id used by the book object and declares it as private and static (type: int)
 - `name` the variable stores the book name and declare it as private (type: String)
 - `author` the variable stores the book author and declare it as private (type: String)
 - `price` the variable stores the book price and declare it as private (type: double)
@@ -35,7 +35,7 @@ A class called "BookStore" should contain:
 #### Instance variables
 
 - `id` the variable stores the book id and declare it as private (type: int)
-- `latestId` the variable stores the latest id used by the book store object and declares it as public and static (type: int)
+- `latestId` the variable stores the latest id used by the book store object and declares it as private and static (type: int)
 - `name` the variable stores the book name and declare it as private (type: String)
 - `books` the variable stores the books that are available and declared as private (type: Book[])
 
