@@ -8,10 +8,10 @@ A class called "Book" should contain:
 
 #### Instance variables
 
-- `id` the variable stores the book id and declare it as private (type: int)
+- `id` the variable stores the book id and declare it as private final(type: int)
 - `latestId` the variable stores the latest id used by the book object and declares it as private and static (type: int)
-- `name` the variable stores the book name and declare it as private (type: String)
-- `author` the variable stores the book author and declare it as private (type: String)
+- `name` the variable stores the book name and declare it as private and final(type: String)
+- `author` the variable stores the book author and declare it as private and final (type: String)
 - `price` the variable stores the book price and declare it as private (type: double)
 
 ### Constructor
@@ -52,7 +52,7 @@ The constructor should do these following task:
 
 - Getters of variables: `id`, `name`, and `books`
 - Setter of variable: `name`
-- `addBook(book:Book):boolean` randomize the id and check if the id exists in the `books` array, then add the new book at an index from the id you just random
+- `addBook(book:Book):boolean` randomize the id and check if the id exists in the `books` array return false, otherwise, add the new book at an index from the id you just random
 - `sellBook(id:int):boolean` remove the book from the `books` array
-- `getAllBook():Book[]` return all available books in the store
+- `getAllBooks():Book[]` return all available books in the store
 - `toString():String`

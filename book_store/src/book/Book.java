@@ -2,11 +2,11 @@ package book;
 
 public class Book {
 
-  private int id;
+  private final int id;
   private static int latestId;
 
-  private String name;
-  private String author;
+  private final String name;
+  private final String author;
 
   private double price;
 
@@ -31,6 +31,10 @@ public class Book {
 
   public double getPrice() {
     return price;
+  }
+
+  public void setPrice(double price) {
+    this.price = price;
   }
 
   @Override
