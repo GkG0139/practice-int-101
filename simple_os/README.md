@@ -48,7 +48,7 @@ The constructor should do these following task:
     - this method should add a new element to the `apps` array and increase the `usedStorage` by the application size
     - return false if the new application size is bigger than the remaining storage, otherwise, return true at the end of the process
 - `removeApplication(id:int)`: this method should remove a specific application from the `apps` array and free the storage size used by the application
-- `getApplicationIdByName(name:String):Application`: this method should find and return application id
+- `getApplicationByName(name:String):Application`: this method should find and return application id
 - `toString():String`
 
 ## Don't forget to do the test :)
