@@ -83,6 +83,7 @@ public class School {
       if (students[i] != null) temp[i] = students[i];
     }
     students = temp;
+    size = newSize;
     return true;
   }
 

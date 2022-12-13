@@ -54,6 +54,6 @@ The constructor should do these following task:
 - Setter of variable: `name`
 - `addStudent(newStudent:Student):boolean` if the amount of students is more than or equal to the size, meaning the school can't accept more students, you should return false, otherwise, add a new student to the `students`'s array and return true
 - `removeStudent(id:int):boolean` kick the student with the same student id you have received out of the school by removing a student from the `students`'s array
-- `getAllStudent():Book[]` return all student in the school
+- `getAllStudent():Student[]` return all student in the school
 - `resize(newSize:int):boolean` if the new size you have received is smaller or equal to the current student's array size, you should return false, or else expand the size of the student's array and return true
 - `toString():String`
